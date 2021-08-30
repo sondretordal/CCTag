@@ -345,6 +345,10 @@ if(CCTAG_BUILD_APPS)
 endif()
 
 if(CCTAG_BUILD_TESTS)
-    add_subdirectory(cctag/test)
-    add_subdirectory(cctag/geometry/test)
+  add_subdirectory(cctag/test)
+  add_subdirectory(cctag/geometry/test)
+endif()
+
+if(CCTAG_BUILD_PYTHON_MODULE)
+  add_subdirectory(pybind-module)
 endif()
